@@ -1,0 +1,21 @@
+<!-- distance.html -->
+{% extends "core/base.html" %}
+
+{% block page_header %}Geopy Lookup{% endblock page_header %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <p>Enter an address</p>
+        <form action="." method="get"> 
+            {{ form.as_p }}
+            <input type="submit" value="Calculate"/>
+        </form>
+    </div>
+    <div class="col">
+            {% for property in results %}
+                <p>{{ property.address }} - {{ property.prop_type }}</p>
+            {% endfor %}     
+    </div>
+</div>
+{% endblock content %}

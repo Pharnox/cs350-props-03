@@ -1,0 +1,62 @@
+[
+{
+    "model": "properties.property",
+    "pk": 1,
+    "fields": {
+        "prop_type": "Condo",
+        "address": "5055 Ralston St, Boulder, CO",
+        "zip_code": 80304,
+        "description": "Gorgeous Dakota Square townhome style condo. Open space, trails, views, restaurants, coffee shops & a park-all out your front door. This pristine home shows pride of ownership throughout. Stunning interior finishes featuring bamboo floors, gas fireplace, granite slab, maple cabinets, 9 ft ceilings, & vessel sinks. Each bedroom, w/ private bath & deck, is situated on their own level, providing maximum privacy. A lovely front patio for outdoor entertaining & watching gorgeous sunsets!",
+        "picture_url": "https://photos.zillowstatic.com/p_f/ISy7ovhshjh1jr1000000000.jpg",
+        "price": "600000.00"
+    }
+},
+{
+    "model": "properties.property",
+    "pk": 2,
+    "fields": {
+        "prop_type": "House",
+        "address": "925 6th St, Las Vegas, NM",
+        "zip_code": 87701,
+        "description": "Beautiful, spacious and with all the grandeur of the time still in place today!! This property is two homes on one large large lot. Main house has 8 bedrooms and 5 bathrooms and once served as a Bed & Breakfast with a large kitchen downstairs and the remnants of the second kitchen on the third floor which is believed to have been the owners living quarters. Second home is the Carriage house, now converted into an apartment. Beautiful Victorian features of the home still in place. Bathrooms have been demolished, which is half the process done. The home needs work and renovations throughout. Bring your imagination for what this could be.",
+        "picture_url": "https://photos.zillowstatic.com/p_h/ISy748ixc6n1yx0000000000.jpg",
+        "price": "89000.00"
+    }
+},
+{
+    "model": "properties.property",
+    "pk": 3,
+    "fields": {
+        "prop_type": "Condo",
+        "address": "630 Leavenworth St, San Francisco, CA",
+        "zip_code": 94109,
+        "description": "Own a piece of SF history at The Marchbank designed by noted Beaux Arts architect, James Francis Dunn. This unique pristine upper floor 2 bed/2bath flat combines stunning old world charm & modern amenities. Has flexible living/bed room area with large picture windows, built-ins,sconces. Amazing circular dining room with chandelier. Gourmet kitchen: marble counters, stainless appliances + gas range & hood. Private rear bedroom with large organized closet. En-suite bath with marble: dual vanities & walk-in shower.",
+        "picture_url": "https://photos.zillowstatic.com/p_h/ISmywyu9k5qc7z0000000000.jpg",
+        "price": "2500000.00"
+    }
+},
+{
+    "model": "properties.property",
+    "pk": 4,
+    "fields": {
+        "prop_type": "House",
+        "address": "707 Baca St, Santa Fe, NM 87505",
+        "zip_code": 87505,
+        "description": "Unique and charming adobe home centrally located in the dynamic Santa Fe Railyard area. The home and studio have vigas, skylights, three kivas, original wood floors and refrigerated air conditioning. The lovely grounds offer mature trees, perennials and a patio to create a true oasis. The gated entry, coyote fencing and walls provide privacy. The home is on a 3,630 square foot lot with off street parking and is just down the street from Counter Culture Cafe and the railyard area.",
+        "picture_url": "https://photos.zillowstatic.com/p_f/ISynslpws4whsb1000000000.jpg",
+        "price": "449000.00"
+    }
+},
+{
+    "model": "properties.property",
+    "pk": 5,
+    "fields": {
+        "prop_type": "Condo",
+        "address": "565 Broome St, New York, NY",
+        "zip_code": 10013,
+        "description": "This one-of-a kind 6,655 square foot, 4 bedroom, 4.5 bathroom full-floor duplex penthouse features three terraces, including a 2,500 square foot private roof terrace with 20 heated outdoor pool, and panoramic north, south, east and west views. This is the pinnacle residence at 565 Broome SoHo.A private elevator landing opens to a gracious oversized foyer, leading to a breathtaking great room with ceilings over 16 feet in height, two terraces overlooking historic SoHo, a library, and a wet bar. A separate entertaining space includes expansive living and dining rooms w over 40 linear feet of floor-to-ceiling west facing windows, boasting captivating views of the city skyline, Hudson River and beyond.",
+        "picture_url": "https://photos.zillowstatic.com/p_h/ISqdvi2j6jo7we0000000000.jpg",
+        "price": "40500000.00"
+    }
+}
+]

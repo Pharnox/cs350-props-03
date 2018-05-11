@@ -1,0 +1,31 @@
+<!-- messenger/list.html -->
+{% extends "core/base.html" %}
+{% load humanize %}
+
+{% block page_title %} Elegant Messages {% endblock page_title %}
+
+{% block page_header %}Elegant Messages{% endblock page_header %}
+
+{% block content %}
+<p>
+    <a href="{% url 'properties:list' %}">Listings</a>
+</p>
+
+
+{% for message in object_list %}
+<div class="row">
+    <div class="col">
+        <div class="card" >
+            <div class="card-body">
+                <h5 class="card-title">{{ message.subject }}</h5>
+                <p class="card-subtitle">{{ message.text }}</p>
+                <h6 class="card-text text-muted">{{ message.sender_email }}</h6>
+                <p class="card-text">{{ message.date_created }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+
+{% endblock content %}

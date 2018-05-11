@@ -1,0 +1,36 @@
+<!-- transactions/list.html -->
+{% extends "core/base.html" %}
+
+{% block page_title %} Proper {% endblock page_title %}
+
+{% block page_header %}
+<div class="row">
+    <div class="col">
+        Transactions for {{ prop }}
+        <p><img src="{{ prop.picture_url }}" height="200px"/></p>
+    </div>
+</div>
+{% endblock page_header %}
+
+{% block content %}
+    
+    <p class="text-center"><a href="{% url 'transactions:add' %}" class="btn btn-sm btn-success">Add a new transaction</a></p>
+    
+    <hr>
+
+    <ul class="list-unstyled">
+    {% for transaction in object_list %}
+        <li><p>
+            <div class="row">
+                <div class="col-md-1 small"> <a href="{% url 'transactions:detail' transaction.pk %}" class="btn btn-sm btn-primary">view</a> </div>
+                <div class="col-md-1 small"> <a href="{% url 'transactions:edit' transaction.pk %}" class="btn btn-sm btn-warning">edit</a> </div>
+                <div class="col-md-3 small">{{ transaction.trans_date }}</div>
+                <div class="col small">{{ transaction.trans_type }}</div>
+            </div>
+        </p></li>
+    {% empty %}
+        No transactions have been created for this property.
+    {% endfor %}
+    </ul>
+    
+{% endblock content %}

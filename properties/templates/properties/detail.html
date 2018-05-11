@@ -1,0 +1,28 @@
+<!-- properties/detail.html -->
+{% extends "core/base.html" %}
+{% load humanize %}
+
+{% block page_title %} Property  {% endblock page_title %}
+
+{% block page_header %}
+<div class="row">
+    <div class="col">
+        <p>{{ object.prop_type }}</p>
+    </div>
+</div>
+{% endblock page_header %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <p class="smaller"><a href="{% url 'properties:list' %}">back</a></p>
+        <img src="{{ object.picture_url }}"/>
+        <p>{{ object.address }}</p>
+        <p>{{ object.zip_code }}</p>
+        <p>$ {{ object.price }}</p>
+        <p>{{ object.description }}</p>
+    </div>
+</div>
+
+{% endblock content %}
+

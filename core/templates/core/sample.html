@@ -1,0 +1,21 @@
+<!-- core/home.html -->
+{% extends "core/base.html" %}
+
+{% block page_title %} Proper {% endblock page_title %}
+
+{% block page_header %}
+<div class="row">
+    <div class="col" style="background-color: pink;">
+        <p>This is a <i>page_header</i> block.</p>
+    </div>
+</div>
+{% endblock page_header %}
+
+{% block content %}
+<div class="row">
+    <div class="col" style="background-color: gray;">
+        <p>This is a <i>content</i> block.</p>
+    </div>
+</div>
+
+{% endblock content %}

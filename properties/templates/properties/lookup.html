@@ -1,0 +1,35 @@
+<!-- lookup.html -->
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block page_header %}Search Properties{% endblock page_header %}
+
+
+
+
+
+
+
+
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <p>Enter terms to query.</p>
+        <form action="." method="get">
+            {{ form.as_p }}
+            <input type="submit" value="Look it up"/>
+        </form>
+    </div>
+    <div class="col">
+        {% if report %}
+            {% for property in results %}
+                <p>{{ property.address }} - {{ property.prop_type }}</p>
+            {% empty %}
+                <p>No matching Properties found.</p>
+            {% endfor %}
+        {% endif %}
+        
+    </div>
+</div>
+{% endblock content %}

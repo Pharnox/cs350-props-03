@@ -1,0 +1,26 @@
+<!-- transactions/detail.html -->
+{% extends "core/base.html" %}
+{% load humanize %}
+
+{% block page_title %} Transaction Details  {% endblock page_title %}
+
+{% block page_header %}
+<div class="row">
+    <div class="col">
+        <p>Transactions for {{ object.prop }}</p>
+        <p><img src="{{ object.prop.picture_url }}"/></p>
+    </div>
+</div>
+{% endblock page_header %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <p class="smaller"><a href="{% url 'transactions:list_by_prop' object.prop.pk %}">back</a></p>
+        <p>{{ object.trans_type }}</p>
+        <p>{{ object.trans_date }}</p>
+    </div>
+</div>
+
+{% endblock content %}
+

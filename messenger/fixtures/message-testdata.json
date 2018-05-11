@@ -1,0 +1,42 @@
+[
+{
+    "model": "messenger.message",
+    "pk": 1,
+    "fields": {
+        "subject": "Hello World",
+        "text": "Hi World. What's the latest spin?",
+        "date_created": "2018-05-01T14:46:28.324Z",
+        "sender_email": "someone@hsci.291"
+    }
+},
+{
+    "model": "messenger.message",
+    "pk": 2,
+    "fields": {
+        "subject": "Hola World",
+        "text": "Donde esta la biblioteca?",
+        "date_created": "2018-05-01T14:46:50.807Z",
+        "sender_email": "someone@hsci.291"
+    }
+},
+{
+    "model": "messenger.message",
+    "pk": 3,
+    "fields": {
+        "subject": "Goodbye",
+        "text": "Cruel, cruel world",
+        "date_created": "2018-05-01T14:47:03.256Z",
+        "sender_email": "someone@hsci.291"
+    }
+},
+{
+    "model": "messenger.message",
+    "pk": 4,
+    "fields": {
+        "subject": "Adios",
+        "text": "and don't you come back no more no more no more...",
+        "date_created": "2018-05-01T14:47:28.577Z",
+        "sender_email": "someone@hsci.291"
+    }
+}
+]
